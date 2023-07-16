@@ -26,6 +26,10 @@
   {{ with .Params.robots }}
   <meta name="robots" content="{{ . }}" />
   {{ end }}
+  
+  <!-- Import in Anybody font -->
+  <link href="https://fonts.googleapis.com/css?family=Anybody&display=swap" rel="stylesheet">
+
   <link rel="canonical" href="{{ .Permalink }}" />
   {{ range .AlternativeOutputFormats -}}
   {{ printf `
